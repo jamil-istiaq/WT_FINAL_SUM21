@@ -6,8 +6,11 @@
 <html>
     <body>
         <fieldset>
+            <input type="text" placeholder="Search Category" onkeyup="search(this)">
+            <div id="searchCat"></div>
             <legend><h3>All Categories</h3></legend>
             <table>
+                <br>
                 <th>SL#</th>
                 <th>Name</th>
                 
@@ -39,6 +42,10 @@
             </table>
         </fieldset>
     </body>
+    
+    <script src="js/category.js">
+    </script>
+    
 </html>
 
 <?php include 'admin_footer.php'; ?>

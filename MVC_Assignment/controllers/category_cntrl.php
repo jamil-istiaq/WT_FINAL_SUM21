@@ -59,4 +59,10 @@
     $query="UPDATE `category` SET `name`='$cname' WHERE id='$id'";
     return execute($query);
 }
+
+function search($key){
+    $query="select id, name from category where name like '%$key%'";
+    $rs=get($query);
+    return $rs;
+}
 ?>
